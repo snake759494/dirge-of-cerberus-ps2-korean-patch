@@ -1,0 +1,4 @@
+d7e4146969bea642ddde434da3010a12daf86e6cb948944710b051fa442bbc43  Final Fantasy VII International - Dirge of Cerberus (Undub v1.0).iso
+eaa74fef24c7cf9d05e1b5715927d43b7ab5f62c5456bf0fb67cac54cd8ee052  Final Fantasy VII International - Dirge of Cerberus (Korean).iso
+375ce9c13fe7d0f32e76fefcf2510f09f19f333a03cf7fe96fcda3605c74e61c  DoC_FF7_International_KO_v1.0.xdelta
+578141ce409361a8f3550c4566bb89f3685d5319c20e562e86985289aff431ef  SLPM-66629_093E5F56.pnach

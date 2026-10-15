@@ -1,0 +1,17 @@
+{
+  "tag": "v1.0",
+  "game": "Dirge of Cerberus -Final Fantasy VII- International (Undub v1.0)",
+  "serial": "SLPM-66629",
+  "source_sha256": "d7e4146969bea642ddde434da3010a12daf86e6cb948944710b051fa442bbc43",
+  "output_sha256": "eaa74fef24c7cf9d05e1b5715927d43b7ab5f62c5456bf0fb67cac54cd8ee052",
+  "patch_sha256": "375ce9c13fe7d0f32e76fefcf2510f09f19f333a03cf7fe96fcda3605c74e61c",
+  "patch_bytes": 4184475,
+  "runtime_scope": "PCSX2 boot/title logo/difficulty/memory card/settings/opening movie subtitles/first battle/pause & in-game menu/tutorial reference tables/extra features/widescreen checked; full game, online, save/load and hardware unverified",
+  "assets": [
+    "DoC_FF7_International_KO_v1.0.xdelta",
+    "SLPM-66629_093E5F56.pnach"
+  ],
+  "widescreen_pnach_sha256": "578141ce409361a8f3550c4566bb89f3685d5319c20e562e86985289aff431ef",
+  "game_crc_original": "BC06733B",
+  "game_crc_korean": "093E5F56"
+}
