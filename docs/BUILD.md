@@ -12,7 +12,7 @@
 python tools/make_src.py      # 원본 ISO → work/ 원문 데이터 생성, translation/ → work/ 복사
 python tools/qa_tr.py         # 누락·제어코드·가나 잔존 검사 (모두 0이어야 함)
 python tools/build.py         # → Final Fantasy VII International - Dirge of Cerberus (Korean).iso
-.\xdelta.exe -e -f -s "Final Fantasy VII International - Dirge of Cerberus (Undub v1.0).iso" "Final Fantasy VII International - Dirge of Cerberus (Korean).iso" DoC_FF7_International_KO_v1.0.xdelta
+.\xdelta.exe -e -f -s "Final Fantasy VII International - Dirge of Cerberus (Undub v1.0).iso" "Final Fantasy VII International - Dirge of Cerberus (Korean).iso" DoC_FF7_International_KO_v1.1.xdelta
 ```
 
 출력 ISO SHA-256이 README 의 완성 ISO 값과 같아야 합니다.

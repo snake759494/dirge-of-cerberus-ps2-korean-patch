@@ -58,7 +58,7 @@ def main():
               open(os.path.join(W,'extra_files.json'),'w'))
     import shutil,glob
     T=os.path.join(ROOT,'translation')
-    for nm in ('extra_ko.json','zone_ko.json','deco_ko.json','exe_ko.json','glossary.md'):
+    for nm in ('extra_ko.json','zone_ko.json','deco_ko.json','exe_ko.json','exe_code.json','glossary.md'):
         if os.path.exists(os.path.join(T,nm)): shutil.copy(os.path.join(T,nm),os.path.join(W,nm))
     os.makedirs(os.path.join(W,'img'),exist_ok=True)
     for f in glob.glob(os.path.join(T,'img','*.json')): shutil.copy(f,os.path.join(W,'img'))

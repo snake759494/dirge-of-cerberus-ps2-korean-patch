@@ -1,4 +1,4 @@
-# 더지 오브 케르베로스 -파이널 판타지 VII- 인터내셔널 · PS2 한글 패치 v1.0
+# 더지 오브 케르베로스 -파이널 판타지 VII- 인터내셔널 · PS2 한글 패치 v1.1
 
 대상: **Dirge of Cerberus -Final Fantasy VII- International (Undub v1.0), SLPM-66629**
 (일본판 인터내셔널 기반 언덥 ISO)
@@ -11,17 +11,23 @@
 | 파일 | SHA-256 |
 |---|---|
 | 원본 `Final Fantasy VII International - Dirge of Cerberus (Undub v1.0).iso` (4,005,664,768바이트) | `d7e4146969bea642ddde434da3010a12daf86e6cb948944710b051fa442bbc43` |
-| 완성 `Final Fantasy VII International - Dirge of Cerberus (Korean).iso` (4,005,986,304바이트) | `eaa74fef24c7cf9d05e1b5715927d43b7ab5f62c5456bf0fb67cac54cd8ee052` |
-| `DoC_FF7_International_KO_v1.0.xdelta` | `375ce9c13fe7d0f32e76fefcf2510f09f19f333a03cf7fe96fcda3605c74e61c` |
+| 완성 `Final Fantasy VII International - Dirge of Cerberus (Korean).iso` (4,005,986,304바이트) | `e7fa4dd72b2607ed337be16e6361583277824f1955c71961f283c6d17fba764c` |
+| `DoC_FF7_International_KO_v1.1.xdelta` | `08863f2160f57c45b919f48672cadd0df7417a50af3b2834462649011620584c` |
 
 ```powershell
-xdelta3 -d -s ".\Final Fantasy VII International - Dirge of Cerberus (Undub v1.0).iso" .\DoC_FF7_International_KO_v1.0.xdelta ".\Final Fantasy VII International - Dirge of Cerberus (Korean).iso"
+xdelta3 -d -s ".\Final Fantasy VII International - Dirge of Cerberus (Undub v1.0).iso" .\DoC_FF7_International_KO_v1.1.xdelta ".\Final Fantasy VII International - Dirge of Cerberus (Korean).iso"
 ```
+
+## BIOS 언어와 관계없이 한글 표시 (v1.1)
+
+원본 게임은 PS2 본체(BIOS) 언어 설정에 따라 일본어/영어 데이터를 고르기 때문에, v1.0은 영문 BIOS 실기·에뮬레이터에서
+영어로만 나왔습니다. v1.1은 실행 파일의 언어 저장 명령 1개(0x242448 `sw a0` → `sw zero`)를 고쳐 BIOS 언어와 관계없이
+항상 한글 데이터를 쓰도록 했습니다. 이 때문에 게임 CRC가 **093A5F56**으로 바뀌었고 와이드 패치도 새 CRC용으로 교체했습니다.
 
 ## 16:9 와이드 패치
 
-한글 패치는 실행 파일 문구를 수정하므로 게임 CRC가 원본(BC06733B)과 달리 **093E5F56**이 됩니다. 그래서 PCSX2에
-내장된 원본용 와이드 패치는 자동으로 적용되지 않습니다. 릴리즈에 한글판 CRC용 `SLPM-66629_093E5F56.pnach`를
+한글 패치는 실행 파일 문구를 수정하므로 게임 CRC가 원본(BC06733B)과 달리 **093A5F56**이 됩니다. 그래서 PCSX2에
+내장된 원본용 와이드 패치는 자동으로 적용되지 않습니다. 릴리즈에 한글판 CRC용 `SLPM-66629_093A5F56.pnach`를
 함께 첨부합니다(PCSX2 커뮤니티 패치를 그대로 옮기고 파일 이름·CRC만 맞춤). 사용법은 [docs/WIDESCREEN.md](docs/WIDESCREEN.md).
 
 ## 번역 범위
@@ -42,7 +48,7 @@ xdelta3 -d -s ".\Final Fantasy VII International - Dirge of Cerberus (Undub v1.0
 
 ## 검증
 
-- PCSX2 2.2: 부팅, 타이틀 로고, 난이도·메모리 카드 안내, 설정, 오프닝 동영상 자막, 첫 전투, 일시정지·게임 내 메뉴,
+- PCSX2 2.2(일본 BIOS 및 유럽판 영문 BIOS SCPH-70004): 부팅, 타이틀 로고, 난이도·메모리 카드 안내, 설정, 오프닝 동영상 자막, 첫 전투, 일시정지·게임 내 메뉴,
   튜토리얼(안내·모드 선택·레퍼런스 조작표), 특전 메뉴, 16:9 와이드 패치 적용.
 - 공개 저장소만으로 재빌드한 ISO와 xdelta 복원 ISO의 SHA-256 일치.
 - **미검증**: 전체 플레이, 온라인 기능, 저장/불러오기, 실기.

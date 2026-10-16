@@ -8,4 +8,4 @@
 
 프로젝트 코드·번역에 포괄적인 오픈소스 라이선스를 부여하지 않습니다. 재사용·재배포 시 해당 권리와 라이선스를 확인하세요. Python 의존성과 xdelta의 권리는 각 제작자에게 있습니다.
 
-`widescreen/SLPM-66629_093E5F56.pnach`는 PCSX2 커뮤니티 패치 모음(PCSX2 배포본의 `resources/patches.zip`)의 `SLPM-66629_BC06733B.pnach`를 패치 내용 수정 없이 옮기고 한글판 CRC에 맞춰 파일 이름과 제목 줄만 바꾼 것이며, 권리는 해당 패치 작성자와 PCSX2 프로젝트에 있습니다. 편의를 위해 함께 게시합니다.
+`widescreen/SLPM-66629_093A5F56.pnach`는 PCSX2 커뮤니티 패치 모음(PCSX2 배포본의 `resources/patches.zip`)의 `SLPM-66629_BC06733B.pnach`를 패치 내용 수정 없이 옮기고 한글판 CRC에 맞춰 파일 이름과 제목 줄만 바꾼 것이며, 권리는 해당 패치 작성자와 PCSX2 프로젝트에 있습니다. 편의를 위해 함께 게시합니다.

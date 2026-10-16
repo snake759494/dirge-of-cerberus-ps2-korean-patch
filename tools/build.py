@@ -418,6 +418,15 @@ def main():
 
         patch_dirrec(f,'FILELIST.BIN;1',len(fl))
         # 실행 파일(SLPM_666.29) 내 문구 제자리 치환
+        cf=os.path.join(WORK,'exe_code.json')
+        if os.path.exists(cf):
+            elba=isof['/SLPM_666.29'][0]
+            for va,v in json.load(open(cf,encoding='utf-8')).items():
+                if va.startswith('_'): continue
+                off=elba*2048+int(va,16)-0x100000+0x100   # 세그먼트0: 파일 0x100 = VA 0x100000
+                f.seek(off);cur=f.read(4)
+                assert cur==struct.pack('<I',int(v['old'],16)),('코드 불일치',va,cur.hex())
+                f.seek(off);f.write(struct.pack('<I',int(v['new'],16)))
         xf=os.path.join(WORK,'exe_ko.json')
         if os.path.exists(xf):
             elba=isof['/SLPM_666.29'][0]
